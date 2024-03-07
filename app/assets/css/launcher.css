@@ -8,8 +8,18 @@
  ******************************************************************************/
 
 @font-face {
-    font-family: 'Avenir Book';
-    src: url('../fonts/Avenir-Book.ttf');
+    font-family: 'Minecraft Ten';
+    src: url('../fonts/Minecraft Ten.ttf');
+}
+
+@font-face {
+    font-family: 'Minecraft Five';
+    src: url('../fonts/MinecraftFive-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Minecraft Reg';
+    src: url('../fonts/Minecraft-Regular.otf');
 }
 
 @font-face {
@@ -42,7 +52,7 @@ p {
 
 /* Set default font and color. */
 body, button {
-    font-family: 'Avenir Book';
+    font-family: 'Minecraft Ten';
     color: white;
 }
 
@@ -284,33 +294,30 @@ body, button {
 }
 
 #welcomeHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     text-align: center;
     color: white;
     margin-bottom: 25px;
     letter-spacing: 1px;
     font-size: 20px;
-    text-shadow: white 0px 0px 0px;
 }
 
 #welcomeDescription {
     text-align: justify;
     font-size: 13px;
     font-weight: 100;
-    text-shadow: rgba(255, 255, 255, 0.75) 0px 0px 20px
 }
 
 #welcomeDescCTA {
     text-align: center;
     font-size: 14px;
     font-weight: 100;
-    text-shadow: rgba(255, 255, 255, 0.75) 0px 0px 20px
 }
 
 /* Login button styles. */
 #welcomeButton {
     background: none;
-    font-weight: bold;
+    
     letter-spacing: 2px;
     border: none;
     padding: 15px 5px;
@@ -328,12 +335,10 @@ body, button {
 }
 #welcomeButton:hover,
 #welcomeButton:focus {
-    text-shadow: 0px 0px 20px #fff;
     outline: none;
 }
 #welcomeButton:active {
     color: #c7c7c7;
-    text-shadow: 0px 0px 20px #c7c7c7;
 }
 #welcomeSVG {
     -webkit-transform: translate3d(0, 0, 0);
@@ -373,7 +378,7 @@ body, button {
 .loginSpanDim {
     font-size: 12px;
     color: #848484;
-    font-weight: bold;
+    
 }
 
 /* Main login container. */
@@ -407,15 +412,13 @@ body, button {
 #loginCancelButton:hover #loginCancelText,
 #loginCancelButton:focus #loginCancelIcon,
 #loginCancelButton:focus #loginCancelText {
-    text-shadow: 0px 0px 20px white;
+
 }
 #loginCancelButton:hover #loginCancelIcon,
 #loginCancelButton:focus #loginCancelIcon {
-    box-shadow: 0px 0px 20px white;
 }
 #loginCancelButton:active #loginCancelIcon,
 #loginCancelButton:active #loginCancelText {
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(255, 255, 255, 0.75);
 }
@@ -434,7 +437,6 @@ body, button {
 /* The X in a circle icon for the cancel button. */
 #loginCancelIcon {
     border-radius: 50%;
-    border: 1px solid white;
     box-sizing: border-box;
     height: 30px;
     width: 30px;
@@ -471,7 +473,7 @@ body, button {
 #loginForm a {
     font-size: 12px;
     color: #848484;
-    font-weight: bold;
+    
     text-decoration: none;
     transition: 0.25s ease;
 }
@@ -497,11 +499,11 @@ body, button {
 
 /* Header on login view. */
 #loginSubheader {
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     margin-bottom: 25px;
     font-size: 12px;
     letter-spacing: 1px;
-    font-weight: bold;
+    
 }
 
 /* Container to organize login field elements. */
@@ -522,8 +524,8 @@ body, button {
 
 /* Span which displays errors related to login field content. */
 .loginErrorSpan {
-    font-family: 'Avenir Medium';
-    font-weight: bold;
+    font-family: 'Minecraft Five';
+    
     font-size: 8px;
     color: #ff1b0c;
     width: 100%;
@@ -558,7 +560,7 @@ body, button {
 
 /* Login text input styles. */
 .loginField {
-    font-family: 'Avenir Book';
+    font-family: 'Minecraft Ten';
     background: none;
     border-width: 1.5px 0px 0px 0px;
     border-style: solid;
@@ -566,7 +568,7 @@ body, button {
     margin-bottom: 20px;
     border-color: #fff;
     color: rgba(255, 255, 255, 0.75);
-    font-weight: bold;
+    
     text-align: center;
     box-sizing: border-box;
     padding: 7.5px;
@@ -584,7 +586,7 @@ body, button {
     font-size: 10px;
     letter-spacing: 1px;
     text-align: center;
-    font-weight: bold;
+    
 }
 .loginField:focus::-webkit-input-placeholder {
     color: transparent;
@@ -611,7 +613,7 @@ body, button {
 /* Login button styles. */
 #loginButton {
     background: none;
-    font-weight: bold;
+    
     letter-spacing: 2px;
     border: none;
     padding: 15px 5px;
@@ -630,12 +632,10 @@ body, button {
 }
 #loginButton:hover,
 #loginButton:focus {
-    text-shadow: 0px 0px 20px #fff;
     outline: none;
 }
 #loginButton:active {
     color: #c7c7c7;
-    text-shadow:  0px 0px 20px #c7c7c7;
 }
 #loginSVG {
     -webkit-transform: translate3d(0, 0, 0);
@@ -648,7 +648,6 @@ body, button {
 }
 #loginButton:hover #loginSVG,
 #loginButton:focus #loginSVG {
-    -webkit-filter: drop-shadow(0px 0px 2px #fff);
 }
 #loginButton:active #loginSVG .arrowLine {
     stroke: #c7c7c7;
@@ -788,7 +787,7 @@ body, button {
 .loginDisclaimerText {
     font-size: 7px;
     color: #848484;
-    font-weight: bold;
+    
     text-align: center;
 }
 
@@ -1009,7 +1008,6 @@ body, button {
 .loginOptionButton:hover,
 .loginOptionButton:focus {
     background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
 }
 
 #loginOptionCancelContainer {
@@ -1022,15 +1020,11 @@ body, button {
     border: none;
     padding: 2px 0px;
     font-size: 16px;
-    font-weight: bold;
+    
     color: lightgrey;
     cursor: pointer;
     outline: none;
     transition: 0.25s ease;
-}
-#loginOptionCancelButton:hover,
-#loginOptionCancelButton:focus {
-    text-shadow: 0px 0px 20px lightgrey;
 }
 #loginOptionCancelButton:active {
     text-shadow: 0px 0px 20px rgba(211, 211, 211, 0.75);
@@ -1127,7 +1121,6 @@ body, button {
 .settingsNavItem:hover,
 .settingsNavItem:focus {
     color: #c1c1c1;
-    text-shadow: 0px 0px 20px #c1c1c1;
 }
 .settingsNavItem[selected] {
     cursor: default;
@@ -1167,12 +1160,7 @@ body, button {
     outline: none;
     transition: 0.25s ease;
 }
-#settingsNavDone:hover,
-#settingsNavDone:focus {
-    text-shadow: 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white;
-}
 #settingsNavDone:active {
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
 }
 #settingsNavDone:disabled {
@@ -1222,7 +1210,7 @@ body, button {
 }
 .settingsTabHeaderText {
     font-size: 20px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
 }
 .settingsTabHeaderDesc {
     font-size: 12px;
@@ -1256,23 +1244,20 @@ body, button {
 /* Button to switch server configurations on the mods tab. */
 .settingsSwitchServerButton {
     opacity: 0;
-    border: 1px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
 }
 .settingsSwitchServerButton:hover,
 .settingsSwitchServerButton:focus {
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.25);
 }
 .settingsSwitchServerButton:active {
-    box-shadow: 0px 0px 20px rgb(187, 187, 187);
     background: rgba(187, 187, 187, 0.25);
     border: 1px solid rgb(187, 187, 187);
     color: rgb(187, 187, 187);
@@ -1293,7 +1278,7 @@ body, button {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
-    font-family: 'Avenir Book';
+    font-family: 'Minecraft Ten';
     transition: 0.25s ease;
 }
 #settingsContainer input[type=number]:focus,
@@ -1322,7 +1307,7 @@ body, button {
 }
 .settingsFieldTitle {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     color: rgba(255, 255, 255, 0.95);
 }
 .settingsFieldDesc {
@@ -1470,10 +1455,9 @@ input:checked + .toggleSwitchSlider:before {
 }
 .settingsFileSelButton:hover,
 .settingsFileSelButton:focus {
-    text-shadow: 0px 0px 20px white;
+    
 }
 .settingsFileSelButton:active {
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
 }
 
@@ -1485,7 +1469,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 89%;
 }
 .settingsFileSelDesc strong {
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
 }
 
 /* * *
@@ -1524,12 +1508,7 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     transition: 0.25s ease;
 }
-.settingsAddAuthAccount:hover,
-.settingsAddAuthAccount:focus {
-    text-shadow: 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white;
-}
 .settingsAddAuthAccount:active {
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75), 0px 0px 20px rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
 }
 .settingsAddAuthAccount:disabled {
@@ -1592,8 +1571,8 @@ input:checked + .toggleSwitchSlider:before {
 .settingsAuthAccountDetailTitle {
     font-size: 12px;
     color: grey;
-    font-weight: bold;
-    font-family: 'Avenir Medium';
+    
+    font-family: 'Minecraft Five';
 }
 .settingsAuthAccountDetailValue {
     font-size: 14px;
@@ -1615,13 +1594,12 @@ input:checked + .toggleSwitchSlider:before {
     border: none;
     white-space: nowrap;
     background: none;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     outline: none;
     transition: 0.25s ease;
 }
 .settingsAuthAccountSelect:hover:not([selected]),
 .settingsAuthAccountSelect:focus:not([selected]) {
-    text-shadow: 0px 0px 20px white, 0px 0px 20px white;
     cursor: pointer;
 }
 .settingsAuthAccount:hover .settingsAuthAccountSelect:not([selected]),
@@ -1640,7 +1618,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -1818,7 +1796,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsDropinFileSystemButton:focus,
 #settingsDropinFileSystemButton[drag] {
     background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
+    
 }
 /* Refresh instructions on the file system button. */
 #settingsDropinRefreshNote {
@@ -1834,7 +1812,7 @@ input:checked + .toggleSwitchSlider:before {
     text-align: left;
     padding: 0px;
     color: #c32625;
-    font-weight: bold;
+    
     cursor: pointer;
     outline: none;
     transition: 0.25s ease;
@@ -1853,7 +1831,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     margin: 10px 0px;
     color: lightgrey;
-    font-weight: bold;
+    
     width: 89%;
 }
 
@@ -1878,7 +1856,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsShaderpackButton:focus,
 #settingsShaderpackButton[drag] {
     background: rgba(54, 54, 54, 0.25);
-    text-shadow: 0px 0px 20px white;
+    
 }
 
 /* Main select container. */
@@ -2060,7 +2038,7 @@ input:checked + .toggleSwitchSlider:before {
 .settingsMemoryStatusTitle {
     font-size: 12px;
     color: grey;
-    font-weight: bold;
+    
 }
 .settingsMemoryStatusValue {
     color: lightgrey;
@@ -2072,12 +2050,12 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     margin: 20px 0px;
     color: lightgrey;
-    font-weight: bold;
+    
 }
 
 /* Status text which displays details on the selected executable. */
 #settingsJavaExecDetails {
-    font-weight: bold;
+    
     color: grey;
     font-size: 12px;
 }
@@ -2114,7 +2092,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     margin: 20px 0px;
     color: lightgrey;
-    font-weight: bold;
+    
     width: 89%;
 }
 
@@ -2178,7 +2156,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     background: #23aa23;
     text-align: center;
-    font-weight: bold;
+    
     margin: 11px 12px;
     color: white;
     height: 15px;
@@ -2195,16 +2173,16 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     color: #23aa23;
-    font-weight: bold;
+    
 }
 
 /* Current version text. */
 #settingsAboutCurrentVersionLine {
     font-size: 10px;
     color: grey;
-    font-weight: bold;
+    
 }
 
 /* About information links. */
@@ -2259,7 +2237,7 @@ input:checked + .toggleSwitchSlider:before {
 .settingsChangelogLabel {
     font-size: 12px;
     color: grey;
-    font-weight: bold;
+    
 }
 
 /* Changelog text content container. */
@@ -2284,7 +2262,7 @@ input:checked + .toggleSwitchSlider:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     border-radius: 3px;
-    font-family: 'Avenir Book';
+    font-family: 'Minecraft Ten';
 }
 .settingsChangelogText li+li {
     margin-top: .25em;
@@ -2304,7 +2282,7 @@ input:checked + .toggleSwitchSlider:before {
     background-color: white;
     border-radius: 3px;
     color: black;
-    font-weight: bold;
+    
 }
 .settingsChangelogText a.commit-link:hover tt {
     text-decoration: underline;
@@ -2361,7 +2339,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsUpdateTitle {
     font-size: 16px;
     padding-left: 10px;
-    font-weight: bold;
+    
 }
 
 /* Update version container. */
@@ -2377,7 +2355,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     background: #23aa23;
     text-align: center;
-    font-weight: bold;
+    
     margin: 11px 12px;
     color: white;
     height: 15px;
@@ -2394,23 +2372,23 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsUpdateVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     color: #23aa23;
-    font-weight: bold;
+    
 }
 
 /* Current version text. */
 #settingsUpdateVersionLine {
     font-size: 10px;
     color: grey;
-    font-weight: bold;
+    
 }
 
 /* Update action container. */
 #settingsUpdateActionContainer {
     padding-top: 10px;
     font-size: 14px;
-    font-weight: bold;
+    
 }
 
 /* Update action button styles. */
@@ -2421,7 +2399,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: none;
     font-size: 14px;
-    font-weight: bold;
+    
     cursor: pointer;
     outline: none;
     text-align: left;
@@ -2429,10 +2407,8 @@ input:checked + .toggleSwitchSlider:before {
 }
 #settingsUpdateActionButton:hover,
 #settingsUpdateActionButton:focus {
-    text-shadow: 0px 0px 20px white, 0px 0px 20px white, 0px 0px 20px white;
 }
 #settingsUpdateActionButton:active {
-    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
     color: #c7c7c7;
 }
 #settingsUpdateActionButton:disabled {
@@ -2592,8 +2568,8 @@ input:checked + .toggleSwitchSlider:before {
 /* News article title styles. */
 #newsArticleTitle {
     font-size: 18px;
-    font-weight: bold;
-    font-family: 'Avenir Medium';
+    
+    font-family: 'Minecraft Five';
     color: white;
     text-decoration: none;
     transition: 0.25s ease;
@@ -2602,11 +2578,10 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsArticleTitle:hover,
 #newsArticleTitle:focus {
-    text-shadow: 0px 0px 20px white;
+    
 }
 #newsArticleTitle:active {
     color: #c7c7c7;
-    text-shadow: 0px 0px 20px #c7c7c7;
 }
 
 /* News meta container. */
@@ -2628,7 +2603,7 @@ input:checked + .toggleSwitchSlider:before {
     display: inline-block;
     font-size: 10px;
     padding: 0px 5px;
-    font-weight: bold;
+    
     border-radius: 2px;
 }
 
@@ -2703,7 +2678,6 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsArticleContentScrollable::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.50);
 }
 .bbCodeSpoilerButton {
     background: none;
@@ -2716,13 +2690,8 @@ input:checked + .toggleSwitchSlider:before {
     border-bottom: 1px solid white;
     padding-bottom: 15px;
 }
-.bbCodeSpoilerButton:hover,
-.bbCodeSpoilerButton:focus {
-    text-shadow: 0px 0px 20px #ffffff, 0px 0px 20px #ffffff, 0px 0px 20px #ffffff;
-}
 .bbCodeSpoilerButton:active {
     color: #c7c7c7;
-    text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
 }
 .bbCodeSpoilerText {
     display: none;
@@ -2827,7 +2796,7 @@ input:checked + .toggleSwitchSlider:before {
 /* News error retry button styles. */
 #newsErrorRetry {
     font-size: 12px;
-    font-weight: bold;
+    
     cursor: pointer;
     background: none;
     border: none;
@@ -2836,11 +2805,10 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsErrorRetry:focus,
 #newsErrorRetry:hover {
-    text-shadow: 0px 0px 20px white;
+    
 }
 #newsErrorRetry:active {
     color: #c7c7c7;
-    text-shadow: 0px 0px 20px #c7c7c7;
 }
 
 /*******************************************************************************
@@ -2909,7 +2877,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     top: 115%;
     left: -17.5px;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
@@ -2969,10 +2937,10 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile avatar container. */
 #avatarContainer {
+    border-radius: 8px;
     box-sizing: border-box;
     height: 70px;
     width: 70px;
-    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
     background-position: center;
@@ -2982,6 +2950,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Avatar edit overlay. */
 #avatarOverlay {
+    border-radius: 8px;
     opacity: 0;
     position: absolute;
     z-index: 1;
@@ -2989,7 +2958,7 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: center;
     align-items: center;
     transition: 0.25s ease;
-    font-weight: bold;
+    
     letter-spacing: 2px;
     background-color: rgba(0, 0, 0, 0.35);
     -webkit-user-select: none;
@@ -3010,7 +2979,6 @@ input:checked + .toggleSwitchSlider:before {
 #user_text {
     font-size: 12px;
     min-width: 135px;
-    font-weight: 900;
     letter-spacing: 1px;
     text-shadow: 0px 0px 20px black;
     position: absolute;
@@ -3178,8 +3146,7 @@ input:checked + .toggleSwitchSlider:before {
 .bot_label {
     font-size: 9px;
     letter-spacing: 1px;
-    font-weight: bold;
-    text-shadow: 0px 0px 0px #bebcbb;
+    
 }
 
 /* Divider used on the bottom of the landing view. */
@@ -3205,8 +3172,7 @@ input:checked + .toggleSwitchSlider:before {
 #player_count {
     color: #949494;
     font-size: 8px;
-    font-weight: 900;
-    text-shadow: 0px 0px 20px #949494;
+
     margin-left: 10px;
 }
 
@@ -3237,7 +3203,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 4px;
     padding: 5px 10px;
     z-index: 1;
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
     bottom: calc(100% + 15px);
@@ -3324,19 +3290,11 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     outline: none;
 }
-#newsButton:hover #newsButtonText,
-#newsButton:focus #newsButtonText {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
-}
 #newsButton:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
 }
 
-#newsButton:hover #newsButtonSVG,
-#newsButton:focus #newsButtonSVG {
-    -webkit-filter: drop-shadow(0px 0px 2px #fff);
-}
 #newsButton:active #newsButtonSVG .arrowLine {
     stroke: #c7c7c7;
 }
@@ -3368,9 +3326,8 @@ input:checked + .toggleSwitchSlider:before {
 /* Span which contains the news button text. */
 #newsButtonText {
     color: white;
-    font-weight: 900;
+
     letter-spacing: 2px;
-    text-shadow: 0px 0px 0px #bebcbb;
     font-size: 11px;
     line-height: 30px;
     display: flex;
@@ -3393,17 +3350,12 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: none;
     cursor: pointer;
-    font-weight: 900;
+
     letter-spacing: 2px;
-    text-shadow: 0px 0px 0px #bebcbb;
     font-size: 20px;
     padding: 0px;
     transition: 0.25s ease;
     outline: none;
-}
-#launch_button:hover,
-#launch_button:focus {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff;
 }
 #launch_button:active {
     color: #c7c7c7;
@@ -3429,9 +3381,8 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Span which displays percentage complete. */
 #launch_progress_label {
-    font-weight: 900;
+
     letter-spacing: 1px;
-    text-shadow: 0px 0px 0px #bebcbb;
     font-size: 20px;
     min-width: 53.21px;
     max-width: 53.21px;
@@ -3455,10 +3406,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px;
     transition: 0.25s ease;
 }
-#server_selection_button:hover,
-#server_selection_button:focus {
-    text-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff, 0px 0px 20px #fff;
-}
+
 #server_selection_button:active {
     color: #c7c7c7;
     text-shadow: 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7, 0px 0px 20px #c7c7c7;
@@ -3552,9 +3500,9 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Overlay title styles. */
 #overlayTitle {
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Five';
     font-size: 20px;
-    font-weight: bold;
+    
     letter-spacing: 1px;
     -webkit-user-select: initial;
 }
@@ -3562,7 +3510,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Overlay description styles. */
 #overlayDesc {
     font-size: 12px;
-    font-weight: bold;
+    
     -webkit-user-select: initial;
 }
 
@@ -3578,8 +3526,8 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
-    font-weight: bold;
+    font-family: 'Minecraft Five';
+    
     border-radius: 2px;
     padding: 0px 8.1px;
     cursor: pointer;
@@ -3587,7 +3535,6 @@ input:checked + .toggleSwitchSlider:before {
 }
 #overlayAcknowledge:hover,
 #overlayAcknowledge:focus {
-    box-shadow: 0px 0px 10px 0px #fff;
     outline: none;
 }
 #overlayAcknowledge:active {
@@ -3597,7 +3544,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Overlay dismiss option styles. */
 #overlayDismiss {
-    font-weight: bold;
+    
     font-size: 10px;
     text-decoration: none;
     padding-top: 2.5px;
@@ -3630,9 +3577,9 @@ input:checked + .toggleSwitchSlider:before {
 /* Server selection header. */
 #serverSelectHeader,
 #accountSelectHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Minecraft Ten';
     font-size: 20px;
-    font-weight: bold;
+    
     color: #fff;
     margin-bottom: 25px;
 }
@@ -3758,14 +3705,14 @@ input:checked + .toggleSwitchSlider:before {
 /* The name of the server listing. */
 .serverListingName {
     font-size: 14px;
-    font-weight: bold;
+    font-family: 'Minecraft Ten';
 }
 
 /* Description for the server listing. */
 .serverListingDescription {
     font-size: 10px;
     line-height: 10px;
-    font-weight: bold;
+    font-family: 'Minecraft Reg';
     text-align: left;
 }
 
@@ -3774,6 +3721,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    font-family: 'Minecraft Five';
 }
 
 /* The minecraft version of the server listing. */
@@ -3852,8 +3800,8 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
-    font-weight: bold;
+    font-family: 'Minecraft Five';
+    
     border-radius: 2px;
     padding: 0px 8.1px;
     cursor: pointer;
@@ -3864,7 +3812,6 @@ input:checked + .toggleSwitchSlider:before {
 #serverSelectConfirm:focus,
 #accountSelectConfirm:hover,
 #accountSelectConfirm:focus {
-    box-shadow: 0px 0px 10px 0px #fff;
     outline: none;
 }
 #serverSelectConfirm:active,
@@ -3876,7 +3823,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Server selection cancel button styles. */
 #serverSelectCancel,
 #accountSelectCancel {
-    font-weight: bold;
+    
     font-size: 10px;
     text-decoration: none;
     padding-top: 2.5px;
