@@ -294,7 +294,7 @@ body, button {
 }
 
 #welcomeHeader {
-    font-family: 'Minecraft Five';
+    font-family: 'Minecraft Ten';
     text-align: center;
     color: white;
     margin-bottom: 25px;
@@ -3211,6 +3211,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-left: 50%;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     cursor: default;
+    font-weight: lighter;
 }
 #mojangStatusTooltip:after {
     content: " ";
@@ -3234,6 +3235,7 @@ input:checked + .toggleSwitchSlider:before {
     text-align: center;
     margin-bottom: 5px;
     letter-spacing: 1px;
+    font-weight: lighter;
 }
 
 /* Wrapper container for the non essential services title. */
@@ -3718,6 +3720,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Content container for the server listing's information. */
 .serverListingInfo {
+    font-weight: lighter;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -3726,6 +3729,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* The minecraft version of the server listing. */
 .serverListingVersion {
+    font-weight: lighter;
     font-size: 10px;
     text-align: center;
     display: flex;
@@ -3733,8 +3737,9 @@ input:checked + .toggleSwitchSlider:before {
     align-items: center;
     line-height: 12px;
     height: 12px;
-    border-radius: 2px;
     background: rgba(31, 140, 11, 0.8);
+    border: 2px solid;
+    border-color: rgba(8, 36, 3, 0.8);
     padding: 0px 2px;
 }
 
@@ -3798,12 +3803,8 @@ input:checked + .toggleSwitchSlider:before {
 #serverSelectConfirm,
 #accountSelectConfirm {
     background: none;
-    border: 1px solid #ffffff;
     color: white;
-    font-family: 'Minecraft Five';
-    
-    border-radius: 2px;
-    padding: 0px 8.1px;
+    font-family: 'Minecraft Ten';
     cursor: pointer;
     transition: 0.25s ease;
     min-height: 20.67px;
@@ -3823,7 +3824,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Server selection cancel button styles. */
 #serverSelectCancel,
 #accountSelectCancel {
-    
+    font-family: 'Minecraft Five';
     font-size: 10px;
     text-decoration: none;
     padding-top: 2.5px;
@@ -3833,6 +3834,7 @@ input:checked + .toggleSwitchSlider:before {
     border: none;
     outline: none;
     cursor: pointer;
+    font-weight: lighter;
 }
 #serverSelectCancel:hover,
 #serverSelectCancel:focus,
