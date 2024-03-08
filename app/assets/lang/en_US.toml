@@ -41,7 +41,7 @@ loginWithMojang = "Login with Mojang"
 cancelButton = "Cancel"
 
 [ejs.overlay]
-serverSelectHeader = "Available Servers"
+serverSelectHeader = "Available Instances"
 serverSelectConfirm = "Select"
 serverSelectCancel = "Cancel"
 accountSelectHeader = "Select an Account"
@@ -132,7 +132,7 @@ continueButton = "CONTINUE"
 
 [js.discord]
 waiting = "Waiting for Client.."
-state = "Server: {shortId}"
+state = "Plays on {shortId}"
 
 [js.index]
 microsoftLoginTitle = "Microsoft Login"
@@ -162,7 +162,7 @@ okay = "Okay"
 noAccountSelected = "No Account Selected"
 
 [js.landing.selectedServer]
-noSelection = "No Server Selected"
+noSelection = "No Instance Selected"
 loading = "Loading.."
 
 [js.landing.serverStatus]
